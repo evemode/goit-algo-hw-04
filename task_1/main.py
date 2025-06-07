@@ -15,4 +15,6 @@ def total_salary(path:str) -> tuple[float, float]:
         total = sum(salary) 
         average = total / len(salary)
         return (total, average)
-print(total_salary('salary.txt'))
+
+total, average = total_salary("salary.txt")
+print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
