@@ -10,7 +10,7 @@ def total_salary(path:str) -> tuple[float, float]:
         try:
             salary = [float(money[1]) for money in name_salary]  # extract salaries and convert to float
         except (ValueError, IndexError):
-            raise ValueError(f'Please, {salary_path}. Failed to convert the salary into a number. ') # return error if found 
+            raise ValueError(f'Please, {salary_path}. Failed to convert the salary into a number. ') # returns error if found 
         
         total = sum(salary) 
         average = total / len(salary)
