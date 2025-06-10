@@ -1,6 +1,7 @@
-from logic import *
+from logic import * # importing logic
 
 def main():
+    ''' Command Line Interface bot '''
     contacts = {}
     print("Welcome to the assistant bot!")
     while True:
