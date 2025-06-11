@@ -20,7 +20,7 @@ def main():
             case 'phone':
                 print(show_phone(args, contacts))
             case 'all':
-                show_all(contacts)
+                print(show_all(contacts))
             case _:
                 print("Invalid command.")
 if __name__ == "__main__":

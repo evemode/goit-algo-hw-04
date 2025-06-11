@@ -30,5 +30,4 @@ def show_phone(args, contacts):
 
 def show_all(contacts):
     '''shows all contacts user has'''
-    for name, number in contacts.items():
-        print(f'{name}: {number}')
+    return "\n".join(f"{name} {number}" for name, number in contacts.items())
